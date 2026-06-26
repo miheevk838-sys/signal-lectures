@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Сигналы и связь · Лекционные деки</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;700&family=JetBrains+Mono:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap');
+:root{--void:#FBF6EC;--ink:#262220;--terra:#FF2D7E;--cyan:#3B9BD8;--orange:#F5A623;
+  --tan:#7A6E65;--hair:rgba(38,34,32,.12);--grid:rgba(241,201,210,.45);
+  --pixel:'Handjet',monospace;--body:'Nunito',system-ui,sans-serif;--mono:'JetBrains Mono',monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--void);color:var(--ink);font-family:var(--body);min-height:100vh;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:42px 42px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1100px;margin:0 auto;padding:clamp(2rem,7vh,5rem) clamp(1.2rem,5vw,3rem)}
+.kick{font-family:var(--mono);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--terra);font-weight:700}
+h1{font-family:var(--pixel);font-weight:700;font-size:clamp(2.6rem,8vw,5.5rem);line-height:1.04;margin:.6rem 0 .4rem}
+h1 em{font-style:normal;color:var(--terra)}
+.sub{color:var(--tan);font-size:clamp(1.05rem,2vw,1.35rem);max-width:62ch;margin-bottom:2.4rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.1rem}
+a.card{display:flex;flex-direction:column;gap:.5rem;text-decoration:none;color:var(--ink);
+  background:#fff;border:2.5px solid var(--ink);border-radius:14px;padding:1.2rem 1.3rem;
+  box-shadow:6px 6px 0 var(--hair);transition:transform .15s,box-shadow .15s,border-color .15s}
+a.card:hover{transform:translate(-2px,-2px);box-shadow:9px 9px 0 var(--terra);border-color:var(--terra)}
+.num{font-family:var(--pixel);font-weight:700;font-size:2rem;color:var(--terra);line-height:1}
+.t{font-family:var(--pixel);font-weight:700;font-size:1.35rem;line-height:1.1}
+.d{color:var(--tan);font-size:.92rem;line-height:1.4}
+.go{margin-top:auto;font-family:var(--mono);font-size:.78rem;font-weight:700;color:var(--cyan);text-transform:uppercase;letter-spacing:.08em}
+.card.c2{box-shadow:6px 6px 0 var(--hair)}
+.card.c2 .num,.card.c2 .go{color:var(--cyan)}
+.card.c2:hover{box-shadow:9px 9px 0 var(--cyan);border-color:var(--cyan)}
+.card.c3 .num,.card.c3 .go{color:var(--orange)}
+.card.c3:hover{box-shadow:9px 9px 0 var(--orange);border-color:var(--orange)}
+footer{margin-top:3rem;font-family:var(--mono);font-size:.82rem;color:var(--tan)}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="kick">✦ Сигналы и связь · Вводный курс</div>
+  <h1>Лекционные <em>деки</em></h1>
+  <p class="sub">Самодостаточные анимированные презентации по физическому уровню связи.
+    Открываются в браузере, листаются стрелками ← →. Авторы: Ананко С. М. · Качур А. Ю.</p>
+  <div class="grid">
+    <a class="card" href="glava0-data.html">
+      <div class="num">00</div>
+      <div class="t">От бутерброда к байту</div>
+      <div class="d">Данные, числа, системы счисления, блок-схемы, первые программы. Интерактив.</div>
+      <div class="go">Открыть →</div>
+    </a>
+    <a class="card c2" href="glava1-signal.html">
+      <div class="num">01</div>
+      <div class="t">Сигнал</div>
+      <div class="d">Как смысл превращается в колебание.</div>
+      <div class="go">Открыть →</div>
+    </a>
+    <a class="card c3" href="glava2-smesh.html">
+      <div class="num">02</div>
+      <div class="t">Случайные сигналы и каналы</div>
+      <div class="d">Случайные сигналы и модели каналов (Смешарики).</div>
+      <div class="go">Открыть →</div>
+    </a>
+    <a class="card" href="onas.html">
+      <div class="num">★</div>
+      <div class="t">О нас</div>
+      <div class="d">Ананко · Качур.</div>
+      <div class="go">Открыть →</div>
+    </a>
+  </div>
+  <footer>© Ананко С. М. · Качур А. Ю. · открывается офлайн, без сборки</footer>
+</main>
+</body>
+</html>
