@@ -847,7 +847,7 @@ requestAnimationFrame(()=>requestAnimationFrame(drawStatic));
   #launchcap{position:fixed;left:18px;bottom:88px;z-index:42;font-family:var(--mono);font-size:.62rem;
     letter-spacing:.1em;color:var(--tan);opacity:0;transition:.2s;pointer-events:none}
   #launch:hover~#launchcap{opacity:.8}
-  body:not(.tools) #editdock{display:none!important}
+  body:not(.tools) #drawbar,body:not(.tools) #editdock{display:none!important}
   #drawbar{left:100px!important}
   /* рамка выделения с угловыми маркерами (как в Figma/PowerPoint) */
   #selbox{position:fixed;border:1.5px solid var(--cyan);z-index:39;pointer-events:none;display:none;border-radius:2px}
